@@ -1,0 +1,13 @@
+PODS:
+  - NKOColorPickerView (0.2)
+  - SIOSocket (0.2.0)
+
+DEPENDENCIES:
+  - NKOColorPickerView
+  - SIOSocket (~> 0.2.0)
+
+SPEC CHECKSUMS:
+  NKOColorPickerView: 3001ad15be1277dac3b80b300f530828e93b23ae
+  SIOSocket: 2facc0bd02ae72d98c223634a46dd8ebdf9be321
+
+COCOAPODS: 0.37.1

@@ -1,0 +1,594 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		083A2B5CF3D06AD8A11F227E /* SIOSocket.h in Headers */ = {isa = PBXBuildFile; fileRef = 2324B35D79B238A25827A082 /* SIOSocket.h */; };
+		0ADB4FDBAC39019468D9E82B /* Pods-sss-test-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8169D4CA791287F5F94E45F7 /* Pods-sss-test-dummy.m */; };
+		1241E0CEB937E748A5A75994 /* Pods-sss-test-NKOColorPickerView-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 999C3A51D77588CFEF647CA3 /* Pods-sss-test-NKOColorPickerView-dummy.m */; };
+		248A4CC08EBDA8A74B877C18 /* NKOColorPickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = B1C7A10053845FBFC71D8A72 /* NKOColorPickerView.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		496D91F3E9086D389A302FBB /* Pods-sss-test-SIOSocket-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 721B427E2B4CA1C4F9B31F07 /* Pods-sss-test-SIOSocket-dummy.m */; };
+		70F59ED041065960DAA2AC47 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD8D9E01A48C822309FDBF69 /* UIKit.framework */; };
+		8167920F2B967D857AD59D4E /* socket.io.js.h in Headers */ = {isa = PBXBuildFile; fileRef = ED59357F522E5BDF21488E1E /* socket.io.js.h */; };
+		81C85D5D6020618F29DB1A08 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1AFAECE5019EE07058A31B3F /* Foundation.framework */; };
+		81F82241541A5907CCD1945D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 39533759ADE91CF96044E95B /* CoreGraphics.framework */; };
+		9C4F2AB7D9D6E7D966BBC33F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1AFAECE5019EE07058A31B3F /* Foundation.framework */; };
+		A47C1FBED7DFB26B1371D71A /* SIOSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E8C237D8EB37D30E8608574 /* SIOSocket.m */; };
+		A4BAEEAD62419C5023B6C7DF /* NKOColorPickerView.h in Headers */ = {isa = PBXBuildFile; fileRef = 179D24D5037D611D3E31B96D /* NKOColorPickerView.h */; };
+		B3406194E9F2923B34CC90F7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1AFAECE5019EE07058A31B3F /* Foundation.framework */; };
+		BBC95A7EA8E76181335BEF54 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA01F63DCBCBB6B3C3EFDD65 /* QuartzCore.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		523282190C391B3771C657A5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 91A565FBF465B878F943D88B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0F830C7EFE29B2F1E7BA534D;
+			remoteInfo = "Pods-sss-test-SIOSocket";
+		};
+		C2AF933A5145E68258EED6FE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 91A565FBF465B878F943D88B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 737E516697F5BB50BAB1CAC6;
+			remoteInfo = "Pods-sss-test-NKOColorPickerView";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0B480BD26D8AE5B984BF37D4 /* libPods-sss-test-NKOColorPickerView.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-sss-test-NKOColorPickerView.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		179D24D5037D611D3E31B96D /* NKOColorPickerView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = NKOColorPickerView.h; sourceTree = "<group>"; };
+		1AFAECE5019EE07058A31B3F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		21CE5D8C4DC541A32A7728AA /* nko_brightness_guide.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = nko_brightness_guide.png; path = Assets/nko_brightness_guide.png; sourceTree = "<group>"; };
+		2324B35D79B238A25827A082 /* SIOSocket.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SIOSocket.h; path = SocketIO/Source/SIOSocket.h; sourceTree = "<group>"; };
+		2E8C237D8EB37D30E8608574 /* SIOSocket.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SIOSocket.m; path = SocketIO/Source/SIOSocket.m; sourceTree = "<group>"; };
+		361929ED815A9AF3FE9ACC5A /* libPods-sss-test-SIOSocket.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-sss-test-SIOSocket.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		39533759ADE91CF96044E95B /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/CoreGraphics.framework; sourceTree = DEVELOPER_DIR; };
+		3AB0DC944F7C05D8286A58BE /* Pods-sss-test-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-sss-test-acknowledgements.plist"; sourceTree = "<group>"; };
+		409471E5EE8D9E1F1402222D /* nko_brightness_guide@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "nko_brightness_guide@2x.png"; path = "Assets/nko_brightness_guide@2x.png"; sourceTree = "<group>"; };
+		445F7FB4A9BB185881A5BA0B /* Pods-sss-test.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-sss-test.debug.xcconfig"; sourceTree = "<group>"; };
+		47CAFD2EEB7EBBF0CDF91B82 /* Pods-sss-test-NKOColorPickerView-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-sss-test-NKOColorPickerView-Private.xcconfig"; sourceTree = "<group>"; };
+		4B366CEE3F0DA8ABA3081E1D /* Pods-sss-test-SIOSocket-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-sss-test-SIOSocket-Private.xcconfig"; sourceTree = "<group>"; };
+		529160E2845A3DA14788962D /* Pods-sss-test-SIOSocket-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-sss-test-SIOSocket-prefix.pch"; sourceTree = "<group>"; };
+		565BDEF77F4F377D0374640C /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		59984237B826A84AD31ADC08 /* nko_colormap.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = nko_colormap.png; path = Assets/nko_colormap.png; sourceTree = "<group>"; };
+		5CFE1065C45FA05DC4225D3A /* Pods-sss-test-NKOColorPickerView-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-sss-test-NKOColorPickerView-prefix.pch"; sourceTree = "<group>"; };
+		66B67C5931BC0DE8E6E3A2B5 /* Pods-sss-test-SIOSocket.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-sss-test-SIOSocket.xcconfig"; sourceTree = "<group>"; };
+		721B427E2B4CA1C4F9B31F07 /* Pods-sss-test-SIOSocket-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-sss-test-SIOSocket-dummy.m"; sourceTree = "<group>"; };
+		73795E67C91445669E7A9280 /* Pods-sss-test-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-sss-test-acknowledgements.markdown"; sourceTree = "<group>"; };
+		78EB1DAD01F2B0E149B673B0 /* Pods-sss-test-environment.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-sss-test-environment.h"; sourceTree = "<group>"; };
+		8169D4CA791287F5F94E45F7 /* Pods-sss-test-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-sss-test-dummy.m"; sourceTree = "<group>"; };
+		999C3A51D77588CFEF647CA3 /* Pods-sss-test-NKOColorPickerView-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-sss-test-NKOColorPickerView-dummy.m"; sourceTree = "<group>"; };
+		AAE69A0A2E7B60F2B9FDD947 /* Pods-sss-test-NKOColorPickerView.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-sss-test-NKOColorPickerView.xcconfig"; sourceTree = "<group>"; };
+		B1C7A10053845FBFC71D8A72 /* NKOColorPickerView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = NKOColorPickerView.m; sourceTree = "<group>"; };
+		C8008A512CA2B108B81AE4B1 /* Pods-sss-test.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-sss-test.release.xcconfig"; sourceTree = "<group>"; };
+		D6A6E637471903E9D3BEFA35 /* Pods-sss-test-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-sss-test-resources.sh"; sourceTree = "<group>"; };
+		DD8D9E01A48C822309FDBF69 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		DF541D4310733E0B249149B4 /* libPods-sss-test.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-sss-test.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EA01F63DCBCBB6B3C3EFDD65 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/QuartzCore.framework; sourceTree = DEVELOPER_DIR; };
+		ED59357F522E5BDF21488E1E /* socket.io.js.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = socket.io.js.h; path = SocketIO/Source/socket.io.js.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0D1B90C7C5440631381D2717 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				81F82241541A5907CCD1945D /* CoreGraphics.framework in Frameworks */,
+				9C4F2AB7D9D6E7D966BBC33F /* Foundation.framework in Frameworks */,
+				BBC95A7EA8E76181335BEF54 /* QuartzCore.framework in Frameworks */,
+				70F59ED041065960DAA2AC47 /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7A2CD3FEABAC98D9DA7E8C4A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B3406194E9F2923B34CC90F7 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CD21A1B89013EFC0000342D4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				81C85D5D6020618F29DB1A08 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		205CFA29FE832CA58A6A207D /* NKOColorPickerView */ = {
+			isa = PBXGroup;
+			children = (
+				179D24D5037D611D3E31B96D /* NKOColorPickerView.h */,
+				B1C7A10053845FBFC71D8A72 /* NKOColorPickerView.m */,
+				A756BA719A156348A6C98A16 /* Resources */,
+				BE039B3EFADB82486A4DA5FD /* Support Files */,
+			);
+			path = NKOColorPickerView;
+			sourceTree = "<group>";
+		};
+		50B0E0B91432E8238CF856B3 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				205CFA29FE832CA58A6A207D /* NKOColorPickerView */,
+				B463283E601B9C54B040C073 /* SIOSocket */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		5CDDDEE91D04C3AB22BAEA83 = {
+			isa = PBXGroup;
+			children = (
+				565BDEF77F4F377D0374640C /* Podfile */,
+				C16D8765451BE3DE3DA7D103 /* Frameworks */,
+				50B0E0B91432E8238CF856B3 /* Pods */,
+				70C141F1668AA0513E162A0D /* Products */,
+				CB6E1529A94C7513466D530B /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		70C141F1668AA0513E162A0D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DF541D4310733E0B249149B4 /* libPods-sss-test.a */,
+				0B480BD26D8AE5B984BF37D4 /* libPods-sss-test-NKOColorPickerView.a */,
+				361929ED815A9AF3FE9ACC5A /* libPods-sss-test-SIOSocket.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A2D21028C8AD41AE6AA95C8F /* Pods-sss-test */ = {
+			isa = PBXGroup;
+			children = (
+				73795E67C91445669E7A9280 /* Pods-sss-test-acknowledgements.markdown */,
+				3AB0DC944F7C05D8286A58BE /* Pods-sss-test-acknowledgements.plist */,
+				8169D4CA791287F5F94E45F7 /* Pods-sss-test-dummy.m */,
+				78EB1DAD01F2B0E149B673B0 /* Pods-sss-test-environment.h */,
+				D6A6E637471903E9D3BEFA35 /* Pods-sss-test-resources.sh */,
+				445F7FB4A9BB185881A5BA0B /* Pods-sss-test.debug.xcconfig */,
+				C8008A512CA2B108B81AE4B1 /* Pods-sss-test.release.xcconfig */,
+			);
+			name = "Pods-sss-test";
+			path = "Target Support Files/Pods-sss-test";
+			sourceTree = "<group>";
+		};
+		A756BA719A156348A6C98A16 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				21CE5D8C4DC541A32A7728AA /* nko_brightness_guide.png */,
+				409471E5EE8D9E1F1402222D /* nko_brightness_guide@2x.png */,
+				59984237B826A84AD31ADC08 /* nko_colormap.png */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		B463283E601B9C54B040C073 /* SIOSocket */ = {
+			isa = PBXGroup;
+			children = (
+				2324B35D79B238A25827A082 /* SIOSocket.h */,
+				2E8C237D8EB37D30E8608574 /* SIOSocket.m */,
+				ED59357F522E5BDF21488E1E /* socket.io.js.h */,
+				FAC7F0915A4A2742681ED6F7 /* Support Files */,
+			);
+			path = SIOSocket;
+			sourceTree = "<group>";
+		};
+		BE039B3EFADB82486A4DA5FD /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				AAE69A0A2E7B60F2B9FDD947 /* Pods-sss-test-NKOColorPickerView.xcconfig */,
+				47CAFD2EEB7EBBF0CDF91B82 /* Pods-sss-test-NKOColorPickerView-Private.xcconfig */,
+				999C3A51D77588CFEF647CA3 /* Pods-sss-test-NKOColorPickerView-dummy.m */,
+				5CFE1065C45FA05DC4225D3A /* Pods-sss-test-NKOColorPickerView-prefix.pch */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Pods-sss-test-NKOColorPickerView";
+			sourceTree = "<group>";
+		};
+		C16D8765451BE3DE3DA7D103 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F96F76F60AB09E145929BF97 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CB6E1529A94C7513466D530B /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				A2D21028C8AD41AE6AA95C8F /* Pods-sss-test */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		F96F76F60AB09E145929BF97 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				39533759ADE91CF96044E95B /* CoreGraphics.framework */,
+				1AFAECE5019EE07058A31B3F /* Foundation.framework */,
+				EA01F63DCBCBB6B3C3EFDD65 /* QuartzCore.framework */,
+				DD8D9E01A48C822309FDBF69 /* UIKit.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		FAC7F0915A4A2742681ED6F7 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				66B67C5931BC0DE8E6E3A2B5 /* Pods-sss-test-SIOSocket.xcconfig */,
+				4B366CEE3F0DA8ABA3081E1D /* Pods-sss-test-SIOSocket-Private.xcconfig */,
+				721B427E2B4CA1C4F9B31F07 /* Pods-sss-test-SIOSocket-dummy.m */,
+				529160E2845A3DA14788962D /* Pods-sss-test-SIOSocket-prefix.pch */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Pods-sss-test-SIOSocket";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		7120461DD7689988BF9A189A /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A4BAEEAD62419C5023B6C7DF /* NKOColorPickerView.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A5C7CF77D76118F6C32A1FCE /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				083A2B5CF3D06AD8A11F227E /* SIOSocket.h in Headers */,
+				8167920F2B967D857AD59D4E /* socket.io.js.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		0F830C7EFE29B2F1E7BA534D /* Pods-sss-test-SIOSocket */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BF4C55CF29957FCC16040527 /* Build configuration list for PBXNativeTarget "Pods-sss-test-SIOSocket" */;
+			buildPhases = (
+				0717A4838AA37CE8A1B7D459 /* Sources */,
+				CD21A1B89013EFC0000342D4 /* Frameworks */,
+				A5C7CF77D76118F6C32A1FCE /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-sss-test-SIOSocket";
+			productName = "Pods-sss-test-SIOSocket";
+			productReference = 361929ED815A9AF3FE9ACC5A /* libPods-sss-test-SIOSocket.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		737E516697F5BB50BAB1CAC6 /* Pods-sss-test-NKOColorPickerView */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D07B70E20F614CF2A571EB89 /* Build configuration list for PBXNativeTarget "Pods-sss-test-NKOColorPickerView" */;
+			buildPhases = (
+				19DEBD7B0FA78E1DD73BF0AC /* Sources */,
+				0D1B90C7C5440631381D2717 /* Frameworks */,
+				7120461DD7689988BF9A189A /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-sss-test-NKOColorPickerView";
+			productName = "Pods-sss-test-NKOColorPickerView";
+			productReference = 0B480BD26D8AE5B984BF37D4 /* libPods-sss-test-NKOColorPickerView.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		B39E19F7BCC55DE21038184E /* Pods-sss-test */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 23E0A7546BF515340D20685D /* Build configuration list for PBXNativeTarget "Pods-sss-test" */;
+			buildPhases = (
+				DFD790601542378206419239 /* Sources */,
+				7A2CD3FEABAC98D9DA7E8C4A /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7BC6B96FCD491A58FC65ACF3 /* PBXTargetDependency */,
+				C17B566C92522F9EF16F3C1A /* PBXTargetDependency */,
+			);
+			name = "Pods-sss-test";
+			productName = "Pods-sss-test";
+			productReference = DF541D4310733E0B249149B4 /* libPods-sss-test.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		91A565FBF465B878F943D88B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0640;
+			};
+			buildConfigurationList = 735B648671808E9134F24C65 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 5CDDDEE91D04C3AB22BAEA83;
+			productRefGroup = 70C141F1668AA0513E162A0D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B39E19F7BCC55DE21038184E /* Pods-sss-test */,
+				737E516697F5BB50BAB1CAC6 /* Pods-sss-test-NKOColorPickerView */,
+				0F830C7EFE29B2F1E7BA534D /* Pods-sss-test-SIOSocket */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0717A4838AA37CE8A1B7D459 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				496D91F3E9086D389A302FBB /* Pods-sss-test-SIOSocket-dummy.m in Sources */,
+				A47C1FBED7DFB26B1371D71A /* SIOSocket.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		19DEBD7B0FA78E1DD73BF0AC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				248A4CC08EBDA8A74B877C18 /* NKOColorPickerView.m in Sources */,
+				1241E0CEB937E748A5A75994 /* Pods-sss-test-NKOColorPickerView-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DFD790601542378206419239 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0ADB4FDBAC39019468D9E82B /* Pods-sss-test-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		7BC6B96FCD491A58FC65ACF3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-sss-test-NKOColorPickerView";
+			target = 737E516697F5BB50BAB1CAC6 /* Pods-sss-test-NKOColorPickerView */;
+			targetProxy = C2AF933A5145E68258EED6FE /* PBXContainerItemProxy */;
+		};
+		C17B566C92522F9EF16F3C1A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-sss-test-SIOSocket";
+			target = 0F830C7EFE29B2F1E7BA534D /* Pods-sss-test-SIOSocket */;
+			targetProxy = 523282190C391B3771C657A5 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		00683E25EBE39BE1552EACFB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4B366CEE3F0DA8ABA3081E1D /* Pods-sss-test-SIOSocket-Private.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-sss-test-SIOSocket/Pods-sss-test-SIOSocket-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		22558E9CE1AD5D499C7A3ABE /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 47CAFD2EEB7EBBF0CDF91B82 /* Pods-sss-test-NKOColorPickerView-Private.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-sss-test-NKOColorPickerView/Pods-sss-test-NKOColorPickerView-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		421C5A0E2CB1F591C879CC6A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 445F7FB4A9BB185881A5BA0B /* Pods-sss-test.debug.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		44EF9C99BC64CB406CD270AF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				ONLY_ACTIVE_ARCH = YES;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		71EF0919A1FD7ECA9FDDAB13 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 47CAFD2EEB7EBBF0CDF91B82 /* Pods-sss-test-NKOColorPickerView-Private.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-sss-test-NKOColorPickerView/Pods-sss-test-NKOColorPickerView-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		809413EAB2A8C350C967747B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4B366CEE3F0DA8ABA3081E1D /* Pods-sss-test-SIOSocket-Private.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-sss-test-SIOSocket/Pods-sss-test-SIOSocket-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		A95FD223E2812A460FA6DE32 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C8008A512CA2B108B81AE4B1 /* Pods-sss-test.release.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		B4CAE8C61039AB31E0D8FF7A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = "RELEASE=1";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		23E0A7546BF515340D20685D /* Build configuration list for PBXNativeTarget "Pods-sss-test" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				421C5A0E2CB1F591C879CC6A /* Debug */,
+				A95FD223E2812A460FA6DE32 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		735B648671808E9134F24C65 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				44EF9C99BC64CB406CD270AF /* Debug */,
+				B4CAE8C61039AB31E0D8FF7A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BF4C55CF29957FCC16040527 /* Build configuration list for PBXNativeTarget "Pods-sss-test-SIOSocket" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				00683E25EBE39BE1552EACFB /* Debug */,
+				809413EAB2A8C350C967747B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D07B70E20F614CF2A571EB89 /* Build configuration list for PBXNativeTarget "Pods-sss-test-NKOColorPickerView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				71EF0919A1FD7ECA9FDDAB13 /* Debug */,
+				22558E9CE1AD5D499C7A3ABE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 91A565FBF465B878F943D88B /* Project object */;
+}
