@@ -4,6 +4,11 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>Pods-sss-test-MBProgressHUD.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Pods-sss-test-NKOColorPickerView.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -22,17 +27,22 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>29A36951048766A40992EACD</key>
+		<key>096558794F715063AE5866E5</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>33BAEEF1BB1158255CD85A09</key>
+		<key>5D86EEF813E819D5809DA7C8</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>DC28B9120C897E757ED3A2EF</key>
+		<key>6A0FF9FF7683948AEA9C0496</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>E9897122CA0F98787CAE1289</key>
 		<dict>
 			<key>primary</key>
 			<true/>

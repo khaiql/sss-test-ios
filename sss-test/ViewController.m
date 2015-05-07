@@ -10,6 +10,7 @@
 #import <SIOSocket/SIOSocket.h>
 #import <NKOColorPickerView.h>
 #import <QuartzCore/QuartzCore.h>
+#import "MBProgressHUD.h"
 
 @interface ViewController ()
 {
@@ -19,8 +20,13 @@
 @property (weak, nonatomic) IBOutlet NKOColorPickerView *colorPickerView;
 @property (weak, nonatomic) IBOutlet UIView *resultView;
 @property (weak, nonatomic) IBOutlet UILabel *lb_hexCode;
+@property (weak, nonatomic) MBProgressHUD *busyIndicator;
+@property (nonatomic) BOOL hasConnected;
 
 @end
+
+#define SOCKET_SERVER @"http://color-vn.cloudapp.net"
+#define MAX_ATTEMPTS 3
 
 @implementation ViewController
 
@@ -40,9 +46,50 @@
         [self setColor:color];
     };
     
-    [SIOSocket socketWithHost: @"http://192.168.111.1:3000" response: ^(SIOSocket *socket)
+    self.busyIndicator = [MBProgressHUD showHUDAddedTo:self.view animated:YES];
+    self.busyIndicator.labelText = @"Connecting";
+    
+    [SIOSocket socketWithHost: SOCKET_SERVER reconnectAutomatically:YES attemptLimit:MAX_ATTEMPTS withDelay:1 maximumDelay:5 timeout:20 response: ^(SIOSocket *socket)
      {
          _socket = socket;
+         
+         __weak typeof(self) weakSelf = self;
+         __block int _attempts = 0;
+         _socket.onConnect = ^() {
+             weakSelf.hasConnected = YES;
+             [weakSelf.busyIndicator hide:NO];
+             [weakSelf setColor:initColor];
+         };
+         
+         _socket.onError = ^(NSDictionary *error) {
+             [weakSelf.busyIndicator hide:NO];
+             weakSelf.hasConnected = NO;
+             
+             UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Connection error" message: @"Cannot connect to socket server" delegate:nil cancelButtonTitle:@"OK" otherButtonTitles: nil];
+             [alert show];
+         };
+         
+         _socket.onReconnect = ^(NSInteger attemps) {
+             weakSelf.hasConnected = YES;
+             [weakSelf.busyIndicator hide:NO];
+             [weakSelf setColor:initColor];
+         };
+         
+         
+         _socket.onReconnectionAttempt = ^(NSInteger attemps) {
+             weakSelf.busyIndicator.detailsLabelText = [NSString stringWithFormat:@"reconnecting (%d attempts)", (int)attemps];
+             _attempts = (int)attemps;
+         };
+         
+         _socket.onReconnectionError = ^(NSDictionary *error) {
+             if (_attempts == MAX_ATTEMPTS) {
+                 [weakSelf.busyIndicator hide:NO];
+                 UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Connection error" message: @"Cannot connect to socket server" delegate:nil cancelButtonTitle:@"OK" otherButtonTitles: nil];
+                 [alert show];
+             }
+             
+             weakSelf.hasConnected = NO;
+         };
          
          [_socket on:@"get-ios-background" callback:^(SIOParameterArray  *args) {
              NSLog(@"in get-ios-background");
@@ -60,9 +107,16 @@
 - (void) setColor: (UIColor *) bgColor {
     self.resultView.backgroundColor = bgColor;
     NSString *bgColorText = [self hexStringForColor:bgColor];
-    self.lb_hexCode.text = bgColorText;
+    
     self.lb_hexCode.textColor = [self getForegroundColor:bgColor];
-    [_socket emit:@"set-background" args:@[bgColorText]];
+    if (self.hasConnected) {
+        self.lb_hexCode.text = bgColorText;
+        [_socket emit:@"set-background" args:@[bgColorText]];
+    }
+    else {
+        self.lb_hexCode.text = @"no connection";
+    }
+    
 }
 
 - (UIColor *) getForegroundColor: (UIColor *)backgroundColor {

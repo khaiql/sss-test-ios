@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "096558794F715063AE5866E5"
-               BuildableName = "libPods-sss-test-NKOColorPickerView.a"
-               BlueprintName = "Pods-sss-test-NKOColorPickerView"
+               BlueprintIdentifier = "E9897122CA0F98787CAE1289"
+               BuildableName = "libPods-sss-test-MBProgressHUD.a"
+               BlueprintName = "Pods-sss-test-MBProgressHUD"
                ReferencedContainer = "container:Pods.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
