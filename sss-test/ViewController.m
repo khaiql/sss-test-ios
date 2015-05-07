@@ -26,7 +26,7 @@
 @end
 
 #define SOCKET_SERVER @"http://color-vn.cloudapp.net"
-#define MAX_ATTEMPTS 3
+#define MAX_ATTEMPTS 5
 
 @implementation ViewController
 
