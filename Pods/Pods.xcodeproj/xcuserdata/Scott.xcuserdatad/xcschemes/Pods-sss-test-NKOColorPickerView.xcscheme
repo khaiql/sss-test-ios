@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "737E516697F5BB50BAB1CAC6"
+               BlueprintIdentifier = "33BAEEF1BB1158255CD85A09"
                BuildableName = "libPods-sss-test-NKOColorPickerView.a"
                BlueprintName = "Pods-sss-test-NKOColorPickerView"
                ReferencedContainer = "container:Pods.xcodeproj">

@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "0F830C7EFE29B2F1E7BA534D"
+               BlueprintIdentifier = "DC28B9120C897E757ED3A2EF"
                BuildableName = "libPods-sss-test-SIOSocket.a"
                BlueprintName = "Pods-sss-test-SIOSocket"
                ReferencedContainer = "container:Pods.xcodeproj">

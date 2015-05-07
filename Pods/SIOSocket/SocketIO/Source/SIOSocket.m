@@ -122,7 +122,9 @@
 // Event listeners
 - (void)on:(NSString *)event callback:(void (^)(SIOParameterArray *args))function {
     NSString *eventID = [event stringByReplacingOccurrencesOfString: @" " withString: @"_"];
-    self.javascriptContext[[NSString stringWithFormat: @"objc_%@", eventID]] = ^() {
+    eventID = [event stringByReplacingOccurrencesOfString:@"-" withString:@"_"];
+    NSString *jsHandler = [NSString stringWithFormat:@"objc_%@", eventID];
+    self.javascriptContext[jsHandler] = ^() {
         NSMutableArray *arguments = [NSMutableArray array];
         for (JSValue *object in [JSContext currentArguments]) {
             if ([object toObject]) {
@@ -133,7 +135,7 @@
         function(arguments);
     };
     
-    [self.javascriptContext evaluateScript: [NSString stringWithFormat: @"objc_socket.on('%@', objc_%@);", event, eventID]];
+    [self.javascriptContext evaluateScript: [NSString stringWithFormat: @"objc_socket.on('%@', %@);", event, jsHandler]];
 }
 
 // Emitters

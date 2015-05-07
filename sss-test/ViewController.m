@@ -32,7 +32,7 @@
     self.resultView.layer.borderWidth = 1.0f;
     self.resultView.layer.cornerRadius = 5.0f;
     
-    UIColor *initColor = [UIColor blueColor];
+    UIColor *initColor = [UIColor colorWithRed:0.0/255.0 green:153.0/255.0 blue:204.0/255.0 alpha:1.0];
     self.colorPickerView.color = initColor;
     [self setColor:initColor];
     
@@ -43,6 +43,12 @@
     [SIOSocket socketWithHost: @"http://192.168.111.1:3000" response: ^(SIOSocket *socket)
      {
          _socket = socket;
+         
+         [_socket on:@"get-ios-background" callback:^(SIOParameterArray  *args) {
+             NSLog(@"in get-ios-background");
+             NSString *currentBgHex = [self hexStringForColor:self.colorPickerView.color];
+             [_socket emit:@"set-background" args:@[currentBgHex]];
+         }];
      }];
 }
 
